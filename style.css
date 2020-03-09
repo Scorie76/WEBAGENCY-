@@ -1,0 +1,708 @@
+/* Définition des polices personnalisées */
+
+
+@font-face
+{
+    font-family:'Roboto-Bold';
+    src: url('fonts/Roboto-Bold.ttf');
+}
+@font-face
+{
+    font-family:'Roboto-BoldItalic';
+    src: url('fonts/Roboto-BoldItalic.ttf');
+}
+@font-face
+{
+    font-family:'Roboto-Black';
+    src: url('fonts/Roboto-Black.ttf');
+}
+@font-face
+{
+    font-family:'Roboto-BlackItalic';
+    src: url('fonts/Roboto-BlackItalic.ttf');
+}
+@font-face
+{
+    font-family:'Roboto-Italic';
+    src: url('fonts/Roboto-Italic.ttf');
+}
+@font-face
+{
+    font-family:'Roboto-Light';
+    src: url('fonts/Roboto-Light.ttf');
+  
+}
+
+/* définitions des Styles*/
+
+
+h1
+{
+	font-family: Roboto-Bold,impact;
+	color: #51a3c9;
+	font-size: 2em;
+}
+
+h2, h3 
+{
+	font-family: Roboto-Bold;
+	color: #000000;
+}
+
+h2
+{	
+	font-size: 2em;
+}
+
+h3
+{
+	font-size: 1.3em;
+}
+
+h4, h5
+{
+	font-family: Roboto-Bold;
+	color: #ffffff;
+	text-align: left;
+}
+
+h4
+{
+	font-size: 1.2em;
+}
+
+h5
+{
+	font-size: 1em;
+}
+
+ p
+{
+	font-family: Roboto-Light;
+	font-size: 0.9em;
+	color: #575757;
+	text-align: center;
+}
+
+.texteuxuiseo
+{
+	font-family: Roboto-Light;
+	font-size: 0.9em;
+	color: #575757;
+	
+}
+
+/*Configuration du body*/
+body {
+    width: 100%; 
+    max-width: 1600px;
+    margin: auto;
+}
+
+/*Configuration du header*/
+
+header
+{
+	width: 100%;
+	max-width: 1600px;
+	height: 100px;
+	position: fixed;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 99999;
+	top: 0;
+}
+
+#menu-header
+{
+	width: 50%;	
+}
+
+#logo
+{
+	width : 25%;
+}
+
+nav ul
+{
+	list-style-type: none;
+	font-family: Roboto-Bold,impact;
+}
+
+/* configuration des liens du menu*/
+
+#menu-header a 
+{
+	text-decoration: none;
+	color: #575757;
+	font-size: 1.1em;
+	padding : 25px 5px;
+ }
+
+#menu-header a:hover
+{
+	border-top: 3px  #5cadd3 solid;
+}
+ 
+ #menu-header ul
+{
+ 	display: flex;
+ 	flex-direction: row;
+	width: 100%;
+	margin-top: 15px;
+	padding-left: 0px;
+}
+
+#menu-header li
+{
+  	margin-left: 60px;
+}
+
+/* configuration de l'image et texte pour mobile non visible*/
+#imagemobile
+{
+	display: none;
+}
+
+#encartmobile
+{
+	display: none;
+}
+
+/* configuration de l'encart sur le slider*/
+
+#slider_encarts
+{
+	width: 100%;
+	margin-top: 100px;
+	height: 550px;
+	position: relative;
+	justify-content: center;
+	overflow: hidden;
+}
+
+#slider
+
+{
+	position: absolute;
+	width: 100%;
+	height: 550px;
+	overflow: hidden;
+}
+
+
+#encart
+{
+	position: absolute;
+	padding-top: 150px;
+	padding-left: 150px;
+	width: 80%;
+    height: 550px;
+    z-index: 1000;
+}
+
+#encart_1
+{
+	font-family: Roboto-Bold,impact;
+	color: #51a3c9;
+	font-size: 2em;
+}
+
+#encart_2, #encart_3
+{
+	font-family: Roboto-Bold,impact;
+	color: #ffffff;
+	text-align: left;
+}
+
+#encart_2
+{
+	font-size: 2em;
+}
+
+#encart_3
+{
+	font-size: 0.8em;
+}
+
+#plus_infos 
+{
+	padding-top: 10px;
+	background-color: #51a3c9;
+	padding-left: 8px;
+	width: 85px;
+	height: 25px;
+	border-bottom: #0a4399 solid 4px;
+	
+}
+
+#plus_infos a
+{
+	text-decoration: none;
+	font-family: Roboto-Black,impact;
+	color: #ffffff;
+	text-align: center;
+	font-size: 0.9em;
+}	
+
+#plus_infos a:hover 
+{
+	color: #0a4399;
+}
+
+/*Configuration des flèches du slider */
+
+
+#chevrons
+{
+
+	position: absolute;
+	width: 100%;
+	height:550px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+#chevrong
+{
+	background: #9e978e;
+	height: 90px;
+	width: 45px;
+	opacity: 0.5;
+	justify-content: center;
+	border-bottom-right-radius: 90px;
+	border-top-right-radius: 90px;
+}
+
+#chevrond
+{
+	background: #9e978e;
+	height: 90px;
+	width: 45px;
+	opacity: 0.5;
+	justify-content: center;
+	border-bottom-left-radius: 90px;
+	border-top-left-radius: 90px;
+}
+
+.fa-angle-right
+{
+	color: #ffffff;
+	z-index: 9000;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.fa-angle-left
+{
+	padding-top: 20px;
+	color: #ffffff;
+	z-index: 9000;
+}
+
+/*///////////////////////////////*/
+/*Configuration de NOS SERVICES*/
+
+#image_liste /* photo mac + 3 paragraphes à icone */
+
+{
+	display: flex;
+	flex-direction: row;
+	padding-top: 60px;
+}
+
+#imagemac
+{
+	width: 530px;
+	height : 400px;
+	max-width: 530px;
+	padding-left: 50px;
+}
+
+/*Encart texte Nos services*/
+
+#liste_services
+{
+	margin-left: 50px;
+	height : 350px;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.services-item-picture 
+{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	height : 100px;
+	
+}
+.texteuxuiseo
+{
+	margin-left: 50px;
+}
+
+/*Positionnement des logos et cercles */
+
+.rond
+{
+	position: relative;
+	border: 1px solid grey;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	left: 20px;
+
+}
+
+.petitrond
+{
+	position: absolute;
+	background-color: #5cadd3;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border :2px white solid;
+	margin-left: 49px;
+	margin-top: 20px;
+	
+
+}
+
+.fas.fa-chart-line{
+    position: absolute;
+    color: #5cadd3; 
+    display: flex;
+    align-self: center;
+    margin-left: 12px;
+	margin-top: 10px;
+}
+
+.fas.fa-cubes{
+    color: #5cadd3; 
+    position: absolute; 
+    margin-left: 12px;
+	margin-top: 10px;
+   
+}
+
+.fas.fa-chart-pie{
+	position: absolute;
+    color: #5cadd3;
+    margin-left: 11px;
+	margin-top: 10px;    
+}
+
+
+/*création des lignes et point de séparation*/
+
+.separation
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.ligneseparation 
+{
+    width: 140px; /* Largeur de la ligne */
+    height: 1px;
+    background-color: #dcdddd; /* CrÃ©e la ligne de sÃ©paration */
+}
+
+/*   Point de la ligne de sÃ©paration    */
+.pointseparation
+{
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    background:#5cadd3;
+  	width:8px;
+  	height:8px;
+  	margin:  10px;
+  	border :solid white 5px;
+}
+
+#nos_services
+{
+	width: 100%;
+}
+
+#nos_services h1
+{
+	width: 100%;
+	text-align: center;
+}
+
+#nos_services h2
+{
+	width: 100%;
+	text-align: center;
+}
+
+#image_liste
+{
+	width: 100%;
+}
+
+#imagemac
+{
+	width: 50%;
+}
+
+/*/////////////////////////////////////////////////////////*/
+/*Configuration nos projets MENU PORTFOLIO ET PORTFOLIO*/
+
+#nos_projets /* configuration de la section projets*/
+{
+	position: relative;
+	width: 100%;
+	margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-color: #edeeef;
+}
+
+#nos_projets h2
+{
+	width: 100%;
+	text-align: center;
+	height: 40px;
+}
+
+/*configuration du menu du portfolio*/
+
+
+#menu-portfolio
+{
+	text-align: center;
+	position: 	absolute;
+	width :600px;
+	height:100px;
+	margin-top: 60px;
+	position: relative;
+	margin:auto;
+}
+
+#menu-portfolio  ul
+{
+	width: 100%;
+	position: absolute;
+	padding: initial;
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+}
+
+#menu-portfolio  ul li
+{
+	width: 150px;
+	background-color: #c9cacc;
+	height: 80px;
+	margin: auto;
+}
+
+
+#menu-portfolio  ul li a
+{
+	display: flex;
+	justify-content: center;
+	height: 40px;
+	padding-top: 26px;
+    padding-bottom: 20px;
+	text-decoration: none;
+	font-family: Roboto-Bold;
+	font-size: 1.2em;
+	color : grey;
+}
+
+#menu-portfolio  ul li a:hover
+{
+	display: flex;
+	justify-content: center;
+	padding-top: 26px;
+    padding-bottom: 20px;
+    height: 35px;
+	width: 100%;
+	color: #fff;
+	background-color: #5cadd3;
+    border-bottom:  5px solid #468cad;
+	
+}
+
+
+#menu-portfolio li .fa.fa-caret-down /*configuration du triangle du menu portfolio*/
+{
+	opacity: 0;
+    font-size: 30px;
+    position: relative;
+    top: -12px;
+    right: 1px;
+    color: #468cad;
+}
+
+#menu-portfolio li:hover .fa.fa-caret-down
+{
+	opacity: 1;
+}
+
+/* configuration du portfolio*/
+
+#portfolio
+{
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #edeeef;	
+}
+
+#portfolio .image img
+{
+	width: 100%;
+	z-index: 1;
+}
+
+.image
+{
+	position: relative;
+	bottom : 0;
+	width :360px;
+	height: 240px;
+	margin-left: 11px;
+	margin-right: 11px;
+
+}
+
+ .bandeau 
+{
+	width :94.5%;
+	height: 50%;
+	position: absolute;
+	z-index: 1;
+	background-color:rgba(0,0,0,0.5);
+	text-align: center;
+	top: 110px;
+	padding-left: 20px;
+	opacity: 0;
+	padding-bottom: 10px;
+}
+
+.bandeau:hover
+{
+	opacity: 1;
+}
+
+.fa-eye
+{
+	position: absolute;
+	color: white;
+    opacity: 1;
+	width: 50px;
+	top:-10px;
+	right: 1px;	
+}
+
+.cercleblanc
+{
+	height: 40px;
+    width: 40px;
+    background-color: #4eb1d5;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -23px;
+    right: 4px;
+    opacity: 1;
+}
+
+/*/////////////////////////////////////////////////*/
+/* configuration carte et formulaire de contact*/
+
+#formulaire_contact
+{
+	position: relative;
+	width: 100%;
+	height: 850px;
+	display: flex;
+   justify-content: center;
+
+}
+
+#formulaire_contact iframe 
+{
+	position: relative;
+	width: 100%;
+	height: 850px;
+	z-index: 99;
+	opacity: 0.5;
+}
+
+.filtre /*Filtre bleu sur la carte*/
+{
+	background-color:  #68A8D1;
+	width: 100%;
+
+}
+
+form
+{
+	position: absolute;
+	width: 18%;
+	min-width: 300px;
+	height: 500px;
+	background-color: #F5F5F5;
+	opacity: 0.9;
+	padding-left: 10px;
+	right: 5%;
+    margin: 10%;
+    z-index: 2000;  
+}
+
+#name, #email, #subject
+{
+	width: 90%;
+}
+
+#message
+{
+	width: 89.4%;
+}
+
+.submit
+{
+	background-color: #5cadd3;
+	height : 35px;
+	color: #ffffff;
+	margin-top: 10px;
+}
+
+form address strong
+{
+	font-family:Roboto-Black; 
+}
+
+
+form address p
+{
+	font-family:Roboto-bold;
+	text-align: left;
+	margin: 0px;
+}
+
+
+input
+{
+	margin-bottom: 15px;
+
+}
+
+
